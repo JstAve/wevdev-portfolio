@@ -54,7 +54,7 @@ export default function About() {
             I am a passionate Information Technology student with a strong interest in developing innovative digital solutions. Currently, I’m in my final year of college, focusing on data analysis, web development, and UI/UX design. This portfolio showcases my skills and projects, from my academic journey to personal and collaborative endeavors.
             </p>
             <p className="text-xl font-light text-gray-600">
-            Explore my work, and get a glimpse of the dedication and creativity I bring to every project. Whether it&aposs building intuitive user interfaces, designing robust tracking systems. I’m excited to share my journey and future aspirations with you.
+            Explore my work, and get a glimpse of the dedication and creativity I bring to every project. Whether it is building intuitive user interfaces, designing robust tracking systems. I’m excited to share my journey and future aspirations with you.
             </p>
           </motion.div>
         </div>
