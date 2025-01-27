@@ -8,7 +8,7 @@ const projects = [
     title: 'EcoTrack: Real-Time Garbage Truck Tracking with Proximity Alerts for Barangay Pamplona Uno Waste Collection',
     description: 'A mobile application designed to improve waste collection efficiency for Barangay Pamplona Uno. The app features GPS tracking for real-time garbage truck locations and proximity alerts to notify residents when the trucks are nearby, enhancing coordination between the community and waste management services.',
     image: '/eco.png?height=400&width=600',
-    
+    status: 'in-progress', // New status added
   },
   {
     title: 'Online Booking System for ElBriza De Silang Private Resort',
@@ -60,14 +60,18 @@ export default function Projects() {
               <div className="p-6">
                 <h3 className="text-xl font-light text-gray-900 mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-900 hover:text-gray-700 font-light transition-colors duration-300"
-                >
-                  View Project →
-                </a>
+                {project.status === 'in-progress' ? (
+                  <span className="text-gray-500 font-light italic">In Progress</span>
+                ) : (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-900 hover:text-gray-700 font-light transition-colors duration-300"
+                  >
+                    View Project →
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
